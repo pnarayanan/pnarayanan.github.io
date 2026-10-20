@@ -11,7 +11,7 @@ I build distributed systems and infrastructure, with experience across ML infere
 ### LinkedIn — Ambry
 *Staff Software Engineer · 2014–2019*
 
-I was an early engineer on [Ambry](https://github.com/linkedin/ambry), LinkedIn’s open-source, geo-distributed object store, and later became its technical lead and architect. During my time, it served several petabytes of unstructured content across hundreds of nodes in four datacenters.
+I was an early engineer on [Ambry](https://github.com/linkedin/ambry), LinkedIn’s open-source, geo-distributed object store, and later became its technical lead and architect. Ambry stores and serves most unstructured content on LinkedIn, including user generated media uploads. During my time, it served several petabytes of unstructured content across hundreds of nodes in four datacenters.
 
 I drove architecture and implementation across routing, storage, and cluster management, partnered with SREs on production operations, and helped shape the team’s technical direction. I also mentored engineers and led GDPR compliance work across Ambry and its customer applications alongside my manager and TPM.
 
@@ -39,7 +39,7 @@ The central challenge was introducing in-place writes into an append-only storag
 
 I co-authored the Ambry SIGMOD 2016 paper and presented the system at @Scale 2016.
 
-[SIGMOD paper](http://dprg.cs.uiuc.edu/docs/SIGMOD2016-a/ambry.pdf) · [@Scale talk](https://atscaleconference.com/videos/ambry-open-source-scalable-geodistributed-object-store/)
+[SIGMOD paper](http://dprg.cs.uiuc.edu/docs/SIGMOD2016-a/ambry.pdf)
 
 ### ClustrixDB
 *Software Engineer · 2012–2014*
