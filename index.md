@@ -4,9 +4,45 @@ layout: default
 
 I build distributed systems and infrastructure, with experience across ML inference platforms, large-scale object storage, and distributed databases.
 
-[LinkedIn](https://www.linkedin.com/in/priyeshnarayanan/) · [Email](mailto:priyesh@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/priyeshnarayanan/) · [Google Scholar](https://scholar.google.com/citations?user=BH82LJ8AAAAJ&hl=en) · [Email](mailto:priyesh@gmail.com)
 
 ## Selected Work
+
+### Netflix — AI Platform & Storage Infrastructure
+
+At Netflix, I built infrastructure for asynchronous ML inference and operated large-scale object storage. My work combined hands-on implementation with architectural direction, platform migrations, and production ownership.
+
+#### Durable execution for ML inference
+
+As a core engineer building the asynchronous inference platform from the ground up, I designed and led implementation of its Temporal-based durable execution architecture. This covered request accumulation and batching, parallel execution of long-running workloads, and failure isolation.
+
+I also led the initial migration of legacy inference workloads onto the platform: defining strategy with leadership, guiding two engineers, and driving the architecture and compatibility changes needed to complete the first major production migration.
+
+#### Composable, multi-stage inference workflows
+
+During the migration, I identified a need for native support for multi-stage pipelines whose constituent algorithms could execute independently, with different resource requirements and execution lifecycles.
+
+I designed the approach, broke down the work, and implemented the solution end to end in approximately one month. It connected a developer-facing composition model to durable DAG orchestration while retaining a single invocation interface for callers.
+
+A central architectural decision was to route constituent stages through the existing inference platform, preserving shared batching and operational controls rather than introducing a separate execution path. The orchestration added only a small overhead relative to the inference work performed by individual stages.
+
+#### A unified inference authoring experience
+
+I helped drive a cross-team effort to unify how developers express and deploy inference workloads. I clarified requirements, aligned teams and leadership on a technical direction, and designed and implemented the initial authoring model for the inference backend.
+
+The work connected developer-facing definitions to validated deployment and execution artifacts, reducing the infrastructure wiring required to bring algorithms onto the platform.
+
+#### Large-scale storage and data protection
+
+Previously, I was one of two engineers responsible for operating a source-of-truth object-storage layer containing more than 30 billion objects and 300 PB of media, with ownership spanning reliability, correctness, feature development, and production operations.
+
+I identified and drove a redesign of its backup and recovery strategy, replacing permanent duplicate copies with versioning, retention, and delayed deletion. The change eliminated approximately $2.5 million in annualized storage costs while simplifying recovery and making restores immediate.
+
+#### Storage capabilities and architecture
+
+I designed and implemented byte-range reads over client-side-encrypted, chunked objects, allowing clients to retrieve the necessary portions without downloading entire objects.
+
+I also designed and built a storage catalog/control plane for tracking object versions and parts across heterogeneous storage locations, separating metadata management from data movement. I integrated it with studio content workflows and presented the work at AWS re:Invent 2022.
 
 ### LinkedIn
 
