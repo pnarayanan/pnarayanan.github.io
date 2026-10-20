@@ -11,31 +11,35 @@ I build distributed systems and infrastructure, with experience across ML infere
 ### LinkedIn — Ambry
 *Staff Software Engineer · 2014–2019*
 
-I was an early engineer on [Ambry](https://github.com/linkedin/ambry), LinkedIn’s open-source, geo-distributed object store, and later became its technical lead and architect. During my time, it served several petabytes of media and other unstructured content across hundreds of nodes in four datacenters.
+I was an early engineer on [Ambry](https://github.com/linkedin/ambry), LinkedIn’s open-source, geo-distributed object store, and later became its technical lead and architect. During my time, it served several petabytes of unstructured content across hundreds of nodes in four datacenters.
 
-I drove architecture and implementation across routing, storage, and cluster management, working with SREs on production operations and helping set the team’s technical direction. I also mentored engineers and led the technical work for GDPR compliance across Ambry and its customer applications, in partnership with my manager and TPM.
+I drove architecture and implementation across routing, storage, and cluster management, partnered with SREs on production operations, and helped shape the team’s technical direction. I also mentored engineers and led GDPR compliance work across Ambry and its customer applications alongside my manager and TPM.
 
-#### A non-blocking, streaming router
+#### Streaming architecture for large objects
 
-I designed and led the implementation and production rollout of Ambry’s asynchronous routing layer, replacing a blocking, non-streaming coordinator. The new architecture supported streaming and chunking, enabling large-object workloads such as video and backups without buffering entire objects in memory.
+I designed and led the implementation and rollout of Ambry’s asynchronous, streaming router, replacing a blocking coordinator. Streaming and chunking enabled large-object workloads such as video and backups without buffering entire objects in memory.
 
-I wrote core components, coordinated implementation across engineers, and worked with SREs on correctness testing, performance validation, and deployment. I validated individual objects up to 1 TiB, and the rollout maintained the service’s 99.99% availability.
-
-[Router framework](https://github.com/linkedin/ambry/pull/211) · [Upload implementation](https://github.com/linkedin/ambry/pull/236) · [Download implementation](https://github.com/linkedin/ambry/pull/308) · [Large-object testing notes](https://gist.github.com/pnarayanan/c9ca5c789f1d7d25af5957f8de840eb9)
+I wrote core components, coordinated contributions across engineers, and worked with SREs on validation and deployment. We validated individual objects up to 1 TiB and completed the rollout while maintaining the service’s 99.99% availability.
 
 #### Dynamic cluster management
 
-I led the transition from static file-based cluster configuration to a dynamic, coordinated management system. This included evaluating alternatives, building consensus around a Helix/ZooKeeper-based approach, and designing, implementing, and deploying the solution.
+I led the transition from static file-based configuration to dynamic cluster management: evaluating alternatives, building consensus, and designing and deploying a Helix/ZooKeeper-based solution.
 
-The change enabled automatic partition sealing and established the foundation for cluster rebalancing and self-healing.
+This enabled automatic partition sealing and established the foundation for cluster rebalancing and self-healing.
 
-#### Hard deletion in an append-only storage engine
+#### Safe deletion in an append-only storage engine
 
-I owned Ambry’s hard-delete capability from design through implementation, production rollout, and verification, enabling physical erasure of deleted object content for data-retention compliance.
+I owned Ambry’s hard-delete capability from design through production rollout, enabling physical erasure of deleted content for compliance requirements.
 
-The central challenge was introducing safe in-place writes into an append-only storage architecture. I designed crash recovery and persistent progress tracking so deletion could resume after failures without corrupting neighboring live records. I also built verification tools and tested recovery under induced failures before completing the rollout.
+The central challenge was introducing in-place writes into an append-only storage engine without corrupting neighboring live records. The design incorporated crash recovery and persistent progress tracking, supported by verification tools and testing under induced failures.
 
-[Design](https://github.com/linkedin/ambry/wiki/Hard%20Deletes) · [Implementation](https://github.com/linkedin/ambry/pull/133) · [Crash-recovery handling](https://github.com/linkedin/ambry/pull/160)
+[Read the hard-delete design](https://github.com/linkedin/ambry/wiki/Hard%20Deletes)
+
+#### Paper and talk
+
+I co-authored the Ambry SIGMOD 2016 paper and presented the system at @Scale 2016.
+
+[SIGMOD paper](http://dprg.cs.uiuc.edu/docs/SIGMOD2016-a/ambry.pdf) · [@Scale talk](https://atscaleconference.com/videos/ambry-open-source-scalable-geodistributed-object-store/)
 
 ### ClustrixDB
 *Software Engineer · 2012–2014*
