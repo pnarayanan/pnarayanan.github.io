@@ -8,8 +8,7 @@ I build distributed systems and infrastructure, with experience across ML infere
 
 ## Selected Work
 
-### LinkedIn — Ambry
-*Staff Software Engineer · 2014–2019*
+### LinkedIn
 
 I was an early engineer on [Ambry](https://github.com/linkedin/ambry), LinkedIn’s open-source, geo-distributed object store, and later became its technical lead and architect. Ambry stores and serves most unstructured content on LinkedIn, including user generated media uploads. During my time, it served several petabytes of unstructured content across hundreds of nodes in four datacenters.
 
@@ -42,7 +41,6 @@ I co-authored the Ambry SIGMOD 2016 paper and presented the system at @Scale 201
 [SIGMOD paper](http://dprg.cs.uiuc.edu/docs/SIGMOD2016-a/ambry.pdf)
 
 ### ClustrixDB
-*Software Engineer · 2012–2014*
 
 At Clustrix, I worked on the internals of a distributed relational database: in-memory tables, query execution, and cluster membership. These presentations explore the mechanisms and tradeoffs behind that work.
 
