@@ -2,7 +2,7 @@
 layout: default
 ---
 
-I build distributed systems and infrastructure, with experience across ML inference platforms, large-scale object storage, and distributed databases.
+I build distributed systems and infrastructure, with experience across ML inference platforms, large-scale distributed systems and object storage, and distributed databases.
 
 [LinkedIn](https://www.linkedin.com/in/priyeshnarayanan/) · [Google Scholar](https://scholar.google.com/citations?user=BH82LJ8AAAAJ&hl=en) · [Email](mailto:priyesh@gmail.com)
 
