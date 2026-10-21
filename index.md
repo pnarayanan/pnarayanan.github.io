@@ -54,11 +54,15 @@ I designed and led the implementation and rollout of Ambry’s asynchronous, str
 
 I wrote core components, coordinated contributions across engineers, and worked with SREs on validation and deployment. We validated individual objects up to 1 TiB and completed the rollout while maintaining the service’s 99.99% availability.
 
+[Read the router design](https://github.com/linkedin/ambry/wiki/Router)
+
 ### Dynamic cluster management
 
 I led the transition from static file-based configuration to dynamic cluster management: evaluating alternatives, building consensus, and designing and deploying a Helix/ZooKeeper-based solution.
 
 This enabled automatic partition sealing and established the foundation for cluster rebalancing and self-healing.
+
+[Read the cluster manager design](https://github.com/linkedin/ambry/wiki/Cluster%20Manager)
 
 ### Safe deletion in an append-only storage engine
 
