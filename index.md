@@ -76,7 +76,7 @@ The central challenge was introducing in-place writes into an append-only storag
 
 I co-authored the Ambry SIGMOD 2016 paper and presented the system at @Scale 2016.
 
-[SIGMOD paper](http://dprg.cs.uiuc.edu/docs/SIGMOD2016-a/ambry.pdf)
+[SIGMOD paper]([http://dprg.cs.uiuc.edu/docs/SIGMOD2016-a/ambry.pdf](https://dl.acm.org/doi/10.1145/2882903.2903738))
 
 ## ClustrixDB
 
